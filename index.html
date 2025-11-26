@@ -1,67 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main Menu</title>
-    <link rel="stylesheet" href="./style/style.css" />
-  </head>
 
-  <body>
-    <div id="width-container">
-      <header>
-        <div class="fixed-size">
-          <div class="header-content">
-            <div id="logoweb">
-              <img src="./img/logo/logo2.png" alt="Logo" />
-            </div>
-            <h1>BANGER LIST</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Main Menu</title>
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+  <div id="width-container">
+
+    <!--header-->
+    <header>
+      <div class="fixed-size">
+        <div class="header-content">
+
+          <!--logo-->
+          <div id="logoweb">
+            <img src="./img/logo/logo2.png" alt="Logo" />
           </div>
-        </div>
-      </header>
 
-      <div class="color">
-        <div class="fixed-size">
-          <nav id="Menu">
-            <ul>
-              <button>Home</button>
-              <button>Vinils</button>
-              <button>CDs</button>
-              <button>Browser</button>
-            </ul>
-          </nav>
+          <!--site title and search bar-->
+          <div id="title-and-search-flex">
+            <div class="title-block">
+              <h1>TheBangerPlace</h1>
+            </div>
+            <div id="searchbar">
+              <input type="text" placeholder="Search..." />
+            </div>
+          </div>
+
+          <!--slogan and user options-->
+          <section>
+
+            <div id="userlogin">
+              <button>Login</button>
+            </div>
+
+            <div id="userregister">
+              <button>register</button>
+            </div>
+
+          </section>
+        </div>
+    </header>
+
+    <!--navigation menu-->
+    <div class="color">
+      <div class="fixed-size">
+        <nav id="Menu">
+          <ul>
+            <button>Home</button>
+            <button>Vinils</button>
+            <button>CDs</button>
+            <button>Browser</button>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+
+      <!--main content-->
+      <div id="main">
+
+        <!--content container-->
+        <div id="contenidor">
+          <!--fixed main-->
+          <div class="fixed-size">
+
+            <!--intro text-->
+            <div id="colorcontenidor1">
+              <div id="subcontenidor"></div>
+            </div>
+            <div id="txt">
+              <h2 class="nomarodiv">What is this page about?</h2>
+              <p class="nomarodiv">...</p>
+            </div>
+            <div id="txt2">
+              <h2 class="nomarodiv">futur cambi de text</h2>
+              <p class="nomarodiv">futur cambi de text</p>
+            </div>
+
+            <!--anuncement-->
+            <div class="anuncementText">
+              <h3 class="h3">NEW DISKS:</h3>
+            </div>
+
+            <!--slider-->
+            <section>
+              <div class="cdbox">
+                <div class="cdelement">
+                  <img src="./img/cds/toheaven.jpg" alt="CD1" class="cdimage" />
+                  <p>1</p>
+                </div>
+                <div class="cdelement">
+                  <img src="./img/cds/okcomputer.jpg" alt="CD1" class="cdimage" />
+                  <p>2</p>
+                </div>
+                <div class="cdelement">
+                  <img src="./img/cds/graduation.jpg" alt="CD1" class="cdimage" />
+                  <p>3</p>
+                </div>
+                <div class="cdelement">
+                  <img src="./img/cds/bailarenlacueva.jpg" alt="CD1" class="cdimage" />
+                  <p>4</p>
+                </div>
+                <div class="cdelement">
+                  <img src="./img/cds/deathcons.jpg" alt="CD1" class="cdimage" />
+                  <p>5</p>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
 
-      <main>
-        <div id="contenidor">
-          <div id="main">
-            <div class="fixed-size">
-              <div id="colorcontenidor1">
-                <div id="subcontenidor"></div>
-              </div>
-              <div id="txt">
-                <h2 class="nomarodiv">What is this page about?</h2>
-                <p class="nomarodiv">...</p>
-              </div>
-              <div id="txt2">
-                <h2 class="nomarodiv">futur cambi de text</h2>
-                <p class="nomarodiv">futur cambi de text</p>
-              </div>
-              <div class="anuncementText">
-                <h3 class="h3">NEW DISKS:</h3>
-              </div>
-              <div class="content-grid">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
-          </div>
+      <hr>
+      <!--footer-->
+      <div id="footer">
+        <div class="fixed-size">
+          <p>© 2024 TheBangerPlace. All rights reserved.</p>
         </div>
-      </main>
-    </div>
-  </body>
+
+      </div>
+    </main>
+
+</body>
+
 </html>
