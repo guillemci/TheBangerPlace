@@ -1,3 +1,4 @@
+/*body and delimitations*/
 body,
 html {
   min-height: 100%;
@@ -16,16 +17,12 @@ html {
   position: relative;
 }
 
-#width-container {
-  max-width: auto;
-  margin: 0 auto;
+.color {
+  background-color: black;
+  width: 100%;
 }
 
-#contenidor {
-  background-color: rgb(255, 253, 240);
-  padding: 20px;
-}
-
+/*header and its content*/
 header {
   margin-bottom: 20px;
   background-color: rgb(35, 34, 39);
@@ -45,157 +42,6 @@ header h1 {
   align-items: center;
   gap: 16px;
 }
-
-#logoweb img {
-  max-height: 92px;
-  min-width: 92px;
-  border: 2px solid rgb(167, 133, 50);
-}
-
-#colorcontenidor1 {
-  background-color: black;
-  width: 100%;
-}
-
-#subcontenidor {
-  background-color: black;
-  border: 2px solid black;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-  opacity: 0.5;
-  filter: blur(5px);
-  background-image: url("../img/altres/aa.png");
-  background-size: cover;
-  background-position: center;
-  min-height: 400px;
-  padding: 0;
-  margin-bottom: 0;
-  transition: filter 0.7s ease;
-}
-
-#txt {
-  all: initial;
-  position: relative;
-  color: white;
-  text-align: center;
-  top: -250px;
-  font-size: 24px;
-  font-weight: bold;
-  opacity: 1;
-  filter: blur(0%);
-  padding: 0px;
-  margin: 0px;
-}
-
-#txt2 {
-  all: initial;
-  position: relative;
-  color: white;
-  text-align: center;
-  top: -300px;
-  font-size: 24px;
-  font-weight: bold;
-  opacity: 0;
-  filter: blur(0%);
-  padding: 0px;
-  margin: 0px;
-}
-
-.nomarodiv {
-  margin: 0;
-  padding: 0;
-}
-
-#subcontenidor:hover {
-  filter: blur(3px);
-}
-
-nav {
-  display: flex;
-  border-bottom: 3px solid black;
-  min-width: auto;
-  min-height: auto;
-  justify-content: center;
-}
-
-nav ul {
-  padding-left: 0%;
-  margin-right: 0%;
-  min-width: auto;
-  min-height: auto;
-}
-
-nav button {
-  display: inline-block;
-  align-items: center;
-  padding: 12px;
-  background-color: rgba(0, 0, 0, 0.8);
-  font-weight: bold;
-  text-transform: uppercase;
-  color: darkslategray;
-  transition: all 0.3s;
-  font-size: 17px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-  width: 240px;
-  height: 70px;
-  min-width: auto;
-  min-height: auto;
-  border: black;
-}
-
-nav button:hover {
-  background-color: rgb(255, 255, 255);
-  cursor: pointer;
-}
-
-#Menu {}
-
-.color {
-  background-color: black;
-  width: 100%;
-}
-
-.anuncementText {
-  background-color: rgb(35, 34, 39);
-  padding-left: 20px;
-  padding-bottom: 3px;
-  padding-right: 30px;
-  padding-top: 3px;
-}
-
-.h3 {
-  color: white;
-}
-
-.cdbox {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  overflow: hidden;
-}
-
-.cdelement {
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 40px;
-  margin: 20px;
-  margin-bottom: 30px;
-  box-shadow: 2px 2px 4px black;
-}
-
-.cdimage {
-  padding: 0px;
-  margin: 0px;
-  width: 250px;
-  height: 250px;
-}
-
-#slogan {}
 
 #userlogin button {
   position: absolute;
@@ -243,6 +89,12 @@ nav button:hover {
   cursor: pointer;
 }
 
+#logoweb img {
+  max-height: 92px;
+  min-width: 92px;
+  border: 2px solid rgb(167, 133, 50);
+}
+
 #title-and-search-flex {
   display: flex;
   justify-content: space-between;
@@ -251,3 +103,158 @@ nav button:hover {
   gap: 20px;
   overflow: hidden;
 }
+
+/*navegation bar*/
+nav {
+  display: flex;
+  border-bottom: 3px solid black;
+  min-width: auto;
+  min-height: auto;
+}
+
+nav ul {
+  padding-left: 0%;
+  margin-right: 0%;
+  min-width: auto;
+  min-height: auto;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 70px;
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: darkslategray;
+  transition: all 0.3s;
+  font-size: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  border: none;
+}
+
+nav li:hover {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/*MAIN MENU*/
+/*main body (image with text introduction)*/
+#width-container {
+  max-width: auto;
+  margin: 0 auto;
+}
+
+#contenidor {
+  background-color: rgb(255, 253, 240);
+  padding: 20px;
+}
+
+#colorcontenidor1 {
+  background-color: black;
+  width: 100%;
+}
+
+#subcontenidor {
+  background-color: black;
+  border: 2px solid black;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.5;
+  filter: blur(5px);
+  background-image: url("../img/altres/aa.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  padding: 0;
+  margin-bottom: 0;
+  transition: filter 0.7s ease;
+}
+
+#subcontenidor:hover {
+  filter: blur(3px);
+}
+
+#txt {
+  all: initial;
+  position: relative;
+  color: white;
+  text-align: center;
+  top: -250px;
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 1;
+  filter: blur(0%);
+  padding: 0px;
+  margin: 0px;
+}
+
+#txt2 {
+  all: initial;
+  position: relative;
+  color: white;
+  text-align: center;
+  top: -300px;
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 0;
+  filter: blur(0%);
+  padding: 0px;
+  margin: 0px;
+}
+
+.nomarodiv {
+  margin: 0;
+  padding: 0;
+}
+
+/*anuncements*/
+.anuncement-text {
+  background-color: rgb(35, 34, 39);
+  padding-left: 20px;
+  padding-bottom: 3px;
+  padding-right: 30px;
+  padding-top: 3px;
+}
+
+.h3 {
+  color: white;
+}
+
+.cdbox {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.cdelement {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 40px;
+  margin: 20px;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 4px black;
+}
+
+.cdimage {
+  padding: 0px;
+  margin: 0px;
+  width: 250px;
+  height: 250px;
+}
+
+/*CDS*
