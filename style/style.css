@@ -17,6 +17,14 @@ html {
   position: relative;
 }
 
+.fixed-size2 {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+
 .color {
   background-color: black;
   width: 100%;
@@ -45,7 +53,7 @@ header h1 {
 
 #userlogin button {
   position: absolute;
-  top: 5px;
+  top: -1px;
   right: 5px;
   display: inline-block;
   align-items: center;
@@ -68,7 +76,7 @@ header h1 {
 
 #userregister button {
   position: absolute;
-  top: 5px;
+  top: -1px;
   right: 85px;
   display: inline-block;
   align-items: center;
@@ -87,6 +95,7 @@ header h1 {
   background-color: rgb(255, 255, 255);
   color: black;
   cursor: pointer;
+  overflow: hidden;
 }
 
 #logoweb img {
@@ -113,6 +122,8 @@ nav {
 }
 
 nav ul {
+  display: flex;
+  width: 100%;
   padding-left: 0%;
   margin-right: 0%;
   min-width: auto;
@@ -120,6 +131,7 @@ nav ul {
 }
 
 nav li {
+  flex-grow: 1;
   display: inline-block;
 }
 
@@ -127,7 +139,6 @@ nav li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 240px;
   height: 70px;
   padding: 6px;
   background-color: rgba(0, 0, 0, 0.8);
@@ -251,10 +262,23 @@ nav li:hover {
 }
 
 .cdimage {
-  padding: 0px;
+padding: 0px;
   margin: 0px;
-  width: 250px;
+  width: 250px; /* <--- Aquesta és la mida fixa */
   height: 250px;
 }
 
-/*CDS*
+/*cds*/
+
+.cd-image-store {
+    width: 100%;
+}
+.cd-boxes-format {
+  display: grid;
+  /* He trovat això: Crea tantes columnes com es puguin.
+  cada columna ha de tenir un mínim de 250px i es reparteixen
+  l'espai restant de forma equitativa (1fr). */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
