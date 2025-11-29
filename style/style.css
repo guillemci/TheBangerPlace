@@ -235,7 +235,6 @@ nav li:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 24px;
-  font-weight: bold;
   opacity: 1;
 }
 
@@ -304,10 +303,10 @@ nav li:hover {
 }
 
 .image {
+  width: 250px;
+  height: 250px;
   max-width: 100%;
   max-height: 100%;
-  width: auto;
-  height: auto;
   box-shadow: 2px 2px 4px black;
   margin: 20px auto;
   margin-left: 20px auto;
@@ -460,7 +459,7 @@ nav li:hover {
   }
 }
 
-/*cds*/
+/*cds && vinyls*/
 .cd-image-store {
   width: 100%;
 }
@@ -500,4 +499,42 @@ nav li:hover {
 .internaldivelement2 {
   position: relative;
   height: 0;
+}
+
+/*explore*/
+
+.explorebuttons {
+  display: inline-block;
+  align-items: center;
+  padding: 6px;
+  margin-bottom: 12px;
+  background-color: rgb(35, 34, 39);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.3s;
+  font-size: 17px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  border: black;
+  cursor: pointer;
+}
+
+.explorebuttons:hover {
+  background-color: rgb(179, 160, 136);
+  color: white;
+  transition: 250ms;
+  transform: scale(1.02);
+}
+
+.advancedsearch {
+  flex: 1;
+  padding: 26px;
+  padding-right: 700px;
+  background: #333333;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  text-align: left;
+  margin-top: 20px;
+  overflow: hidden;
 }
