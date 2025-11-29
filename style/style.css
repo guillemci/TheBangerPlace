@@ -271,12 +271,18 @@ nav li:hover {
 
 .cdbox {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  overflow: hidden;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.group {
+  display: flex;
+  animation: spin 5s infinite linear;
+  /*animation*/
 }
 
 .cdelement {
+  flex: 0 0 5em;
   padding-top: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -284,6 +290,9 @@ nav li:hover {
   margin: 20px;
   margin-bottom: 30px;
   box-shadow: 2px 2px 4px black;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
 }
 
 .cdimage {
@@ -329,40 +338,96 @@ nav li:hover {
 
 /*cds texts*/
 
+.new-disks-name {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.new-disks-button {
+  text-align: center;
+  margin-top: auto;
+}
+
+.new-disks-button button {
+  border: none;
+  padding: 40px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin: 9px;
+  margin-top: 12px;
+  background-color: rgb(167, 133, 50);
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+}
+
+.new-disks-button button:hover {
+  background-color: rgb(179, 160, 136);
+  color: black;
+  transition: 250ms;
+  transform: scale(1.02);
+}
+
+
+.new-disks-autor {
+  font-style: italic;
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: darkgray;
+  text-align: center;
+}
+
+.new-disks-genere {
+  margin-bottom: 8px;
+  font-size: 9px;
+  color: gray;
+  margin-bottom: 1px;
+  text-align: center;
+}
+
+
 .nom-album {
   font-weight: bold;
   margin-bottom: 6px;
-  font-size: 22px;
+  font-size: 22px auto;
   padding-left: 14px;
-  margin-bottom: 0px;
+  margin-top: 6px;
+  margin-right: 3px;
 }
 
 .autor {
   font-style: italic;
   margin-bottom: 4px;
-  font-size: 18px;
+  font-size: 18px auto;
   color: darkgray;
   padding-left: 14px;
+  margin-right: 3px;
 }
 
 .genere {
   margin-bottom: 8px;
-  font-size: 15px;
+  font-size: 15px auto;
   color: gray;
   padding-left: 14px;
   margin-bottom: 1px;
+  margin-right: 3px;
 }
 
 .preu {
   color: darkred;
   margin-bottom: 12px;
-  font-size: 18px;
+  font-size: 18px auto;
   padding-left: 14px;
+  margin-right: 3px;
 }
 
 .divcomprar {
   padding: 20px;
   text-align: center;
+  margin-top: auto;
 }
 
 .comprar {
@@ -384,8 +449,18 @@ nav li:hover {
   transform: scale(1.02);
 }
 
-/*cds*/
+/*carousel animation*/
+@keyframes spin {
+  from {
+    translate: 0;
+  }
 
+  to {
+    translate: -100%;
+  }
+}
+
+/*cds*/
 .cd-image-store {
   width: 100%;
 }
@@ -410,13 +485,19 @@ nav li:hover {
   padding-bottom: 10px;
   margin: 20px;
   box-shadow: 2px 2px 4px black;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .cdimagesymbol {
-  width: 30px;
-  height: 29px;
+  width: 20px;
+  height: 19px;
   position: absolute;
-  right: 21px;
-  overflow: hidden;
+  right: 6px;
+  top: -14px;
+}
+
+.internaldivelement2 {
+  position: relative;
+  height: 0;
 }
