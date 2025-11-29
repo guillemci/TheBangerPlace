@@ -22,7 +22,6 @@ html {
   max-width: 1250px;
   margin: 0 auto;
   box-sizing: border-box;
-  position: relative;
 }
 
 .color {
@@ -34,6 +33,7 @@ html {
   border: 3px solid black;
   margin-bottom: 50px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  position: relative;
 }
 
 /*header and its content*/
@@ -308,15 +308,17 @@ nav li:hover {
 .news-container {
   display: flex;
   padding: 0 15px;
+  margin-bottom: 21px;
   flex-wrap: wrap;
-  gap: 5rem;
+  column-gap: 5rem;
+  row-gap: 0;
+
 }
 
 .news-subcontainer {
   display: flex;
   align-items: center;
   gap: 20px;
-
   overflow: hidden;
 
 }
@@ -408,7 +410,7 @@ nav li:hover {
   padding-bottom: 10px;
   margin: 20px;
   box-shadow: 2px 2px 4px black;
-    position: relative;
+  position: relative;
 }
 
 .cdimagesymbol {
