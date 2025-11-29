@@ -316,13 +316,70 @@ nav li:hover {
   display: flex;
   align-items: center;
   gap: 20px;
-  
-    overflow: hidden;
+
+  overflow: hidden;
 
 }
 
 .lateral-text {
   flex: 1;
+}
+
+/*cds texts*/
+
+.nom-album {
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 22px;
+  padding-left: 14px;
+  margin-bottom: 0px;
+}
+
+.autor {
+  font-style: italic;
+  margin-bottom: 4px;
+  font-size: 18px;
+  color: darkgray;
+  padding-left: 14px;
+}
+
+.genere {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: gray;
+  padding-left: 14px;
+  margin-bottom: 1px;
+}
+
+.preu {
+  color: darkred;
+  margin-bottom: 12px;
+  font-size: 18px;
+  padding-left: 14px;
+}
+
+.divcomprar {
+  padding: 20px;
+  text-align: center;
+}
+
+.comprar {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(167, 133, 50);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.comprar:hover {
+  background-color: rgb(179, 160, 136);
+  color: white;
+  transition: 250ms;
+  transform: scale(1.02);
 }
 
 /*cds*/
@@ -339,4 +396,25 @@ nav li:hover {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
+  text-align: left;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.cdelement2 {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
+  margin: 20px;
+  box-shadow: 2px 2px 4px black;
+    position: relative;
+}
+
+.cdimagesymbol {
+  width: 30px;
+  height: 29px;
+  position: absolute;
+  right: 21px;
+  overflow: hidden;
 }
