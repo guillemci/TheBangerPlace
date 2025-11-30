@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main Menu</title>
+    <title>vinyls</title>
     <link rel="stylesheet" href="../style/style.css" />
 </head>
 
 <body>
+    <!--ANIMACIO ENTRADA-->
+    <div id="intro"></div>
     <div id="width-container">
 
         <!--header-->
@@ -32,7 +33,7 @@
                     </div>
 
                     <!--slogan and user options-->
-                    <section>
+                    <div>
 
                         <div id="userlogin">
                             <button>Login</button>
@@ -42,8 +43,9 @@
                             <button>register</button>
                         </div>
 
-                    </section>
+                    </div>
                 </div>
+            </div>
         </header>
 
         <!--navigation menu-->
@@ -53,7 +55,7 @@
                     <ul>
                         <li><a href="../index.html">Main Menu</a></li>
                         <li><a href="../pages/cataleg_cds.html">Cds</a></li>
-                        <li><a href="../pages/cataleg_vinils.html">Vinyl</a></li>
+                        <li><a>Vinyl</a></li>
                         <li><a href="../pages/explorardiscos.html">Discover</a></li>
                     </ul>
                 </nav>
@@ -66,7 +68,7 @@
                 <div class="anuncement-text">
                     <h3 class="h3">BUY VINYLS:</h3>
                 </div>
-                <section>
+                <div>
                     <div class="cd-boxes-format">
                         <div class="cdelement2">
                             <img src="../img/cds/deathcons.jpg" alt="deathcons" class="cd-image-store" />
@@ -74,10 +76,10 @@
                             <div class="autor">Have a Nice Life</div>
                             <div class="genere">Post-Punk, Shoegaze, Gothic Rock Drone, Post-Rock, Post-Industrial,
                                 Doomgaze, Gothic Rock</div>
-                            <preu class="preu">46,99€</preu>
-                            <div class="divcomprar"><button class="comprar">COMPRAR</button></div>
+                            <span class="preu">46,99€</span>
+                            <div class="divcomprar"><button class="comprar">BUY</button></div>
                             <div class="internaldivelement2">
-                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol">
+                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol" alt="vinyl">
                             </div>
                         </div>
                         <div class="cdelement2">
@@ -85,10 +87,10 @@
                             <div class="nom-album">Graduation</div>
                             <div class="autor">Kanye West</div>
                             <div class="genere">Pop Rap Electropop, Electro Hop, Chipmunk Soul, Frat Rap</div>
-                            <preu class="preu">37,12€</preu>
-                            <div class="divcomprar"><button class="comprar">COMPRAR</button></div>
+                            <span class="preu">37,12€</span>
+                            <div class="divcomprar"><button class="comprar">BUY</button></div>
                             <div class="internaldivelement2">
-                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol">
+                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol" alt="vinyl">
                             </div>
                         </div>
                         <div class="cdelement2">
@@ -96,10 +98,10 @@
                             <div class="nom-album">illmatic</div>
                             <div class="autor">Nas</div>
                             <div class="genere">Boom Bap, Hardcore Hip Hop Conscious Hip Hop, Jazz Rap</div>
-                            <preu class="preu">23,22€</preu>
-                            <div class="divcomprar"><button class="comprar">COMPRAR</button></div>
+                            <span class="preu">23,22€</span>
+                            <div class="divcomprar"><button class="comprar">BUY</button></div>
                             <div class="internaldivelement2">
-                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol">
+                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol" alt="vinyl">
                             </div>
                         </div>
                         <div class="cdelement2">
@@ -107,130 +109,131 @@
                             <div class="nom-album">Ok Computer</div>
                             <div class="autor">Radiohead</div>
                             <div class="genere">Alternative Rock, Art Rock Post-Britpop, Space Rock Revival</div>
-                            <preu class="preu">31,95€</preu>
-                            <div class="divcomprar"><button class="comprar">COMPRAR</button></div>
+                            <span class="preu">31,95€</span>
+                            <div class="divcomprar"><button class="comprar">BUY</button></div>
                             <div class="internaldivelement2">
-                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol">
+                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol" alt="vinyl">
                             </div>
                         </div>
                         <div class="cdelement2">
-                            <img src="../img/cds/toheaven.jpg" alt="okcomputer" class="cd-image-store" />
+                            <img src="../img/cds/toheaven.jpg" alt="toheaven" class="cd-image-store" />
                             <div class="nom-album">Lift Yr. Skinny Fists Like Antennas to Heaven!</div>
                             <div class="autor">Godspeed You Black Emperor!</div>
                             <div class="genere">Post-Rock Field Recordings, Drone, Chamber Music, Ambient</div>
-                            <preu class="preu">29,92€</preu>
-                            <div class="divcomprar"><button class="comprar">COMPRAR</button></div>
+                            <span class="preu">29,92€</span>
+                            <div class="divcomprar"><button class="comprar">BUY</button></div>
                             <div class="internaldivelement2">
-                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol">
+                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol" alt="vinyl">
                             </div>
                         </div>
                         <div class="cdelement2">
-                            <img src="../img/cds/amnesiac.jpg" alt="okcomputer" class="cd-image-store" />
+                            <img src="../img/cds/amnesiac.jpg" alt="amnesiac" class="cd-image-store" />
                             <div class="nom-album">Amnesiac</div>
                             <div class="autor">Radiohead</div>
                             <div class="genere">Art Rock, Experimental Rock Electronic, Jazz-Rock, Art Pop, Ambient Pop
                             </div>
-                            <preu class="preu">28,33€</preu>
-                            <div class="divcomprar"><button class="comprar">COMPRAR</button></div>
+                            <span class="preu">28,33€</span>
+                            <div class="divcomprar"><button class="comprar">BUY</button></div>
                             <div class="internaldivelement2">
-                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol">
+                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol" alt="vinyl">
                             </div>
                         </div>
                         <div class="cdelement2">
-                            <img src="../img/cds/darkside.jpg" alt="okcomputer" class="cd-image-store" />
+                            <img src="../img/cds/darkside.jpg" alt="darkside" class="cd-image-store" />
                             <div class="nom-album">The Dark Side of the Moon</div>
                             <div class="autor">Pink Floyd</div>
                             <div class="genere">
                                 Art Rock, Progressive Rock
                                 Psychedelic Rock, Space Rock
                             </div>
-                            <preu class="preu">23,33€</preu>
-                            <div class="divcomprar"><button class="comprar">COMPRAR</button></div>
+                            <span class="preu">23,33€</span>
+                            <div class="divcomprar"><button class="comprar">BUY</button></div>
                             <div class="internaldivelement2">
-                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol">
+                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol" alt="vinyl">
                             </div>
                         </div>
                         <div class="cdelement2">
-                            <img src="../img/cds/wishyou.jpg" alt="okcomputer" class="cd-image-store" />
+                            <img src="../img/cds/wishyou.jpg" alt="wishyou" class="cd-image-store" />
                             <div class="nom-album">Wish You Were Here</div>
                             <div class="autor">Pink Floyd</div>
                             <div class="genere">
                                 Progressive Rock, Art Rock
                                 Space Rock, Psychedelic Rock
                             </div>
-                            <preu class="preu">33,99€</preu>
-                            <div class="divcomprar"><button class="comprar">COMPRAR</button></div>
+                            <span class="preu">33,99€</span>
+                            <div class="divcomprar"><button class="comprar">BUY</button></div>
                             <div class="internaldivelement2">
-                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol">
+                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol" alt="vinyl">
                             </div>
                         </div>
                         <div class="cdelement2">
-                            <img src="../img/cds/topimpabutter.jpg" alt="okcomputer" class="cd-image-store" />
+                            <img src="../img/cds/topimpabutter.jpg" alt="topimpabutter" class="cd-image-store" />
                             <div class="nom-album">To Pimp a Butterfly</div>
                             <div class="autor">Kendrick Lamar</div>
                             <div class="genere">
                                 Conscious Hip Hop, Jazz Rap
                                 Political Hip Hop, Neo-Soul, Funk, Poetry, Experimental Hip Hop
                             </div>
-                            <preu class="preu">35,05€</preu>
-                            <div class="divcomprar"><button class="comprar">COMPRAR</button></div>
+                            <span class="preu">35,05€</span>
+                            <div class="divcomprar"><button class="comprar">BUY</button></div>
                             <div class="internaldivelement2">
-                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol">
+                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol" alt="vinyl">
                             </div>
                         </div>
                         <div class="cdelement2">
-                            <img src="../img/cds/revolver.jpg" alt="okcomputer" class="cd-image-store" />
+                            <img src="../img/cds/revolver.jpg" alt="revolver" class="cd-image-store" />
                             <div class="nom-album">Revolver</div>
                             <div class="autor">The Beatles</div>
                             <div class="genere">
                                 Pop Rock, Psychedelic Pop
                                 Psychedelic Rock, Psychedelic Pop, Baroque Pop
                             </div>
-                            <preu class="preu">25,16€</preu>
-                            <div class="divcomprar"><button class="comprar">COMPRAR</button></div>
+                            <span class="preu">25,16€</span>
+                            <div class="divcomprar"><button class="comprar">BUY</button></div>
                             <div class="internaldivelement2">
-                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol">
+                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol" alt="vinyl">
                             </div>
                         </div>
                         <div class="cdelement2">
-                            <img src="../img/cds/lateregistr.jpg" alt="okcomputer" class="cd-image-store" />
+                            <img src="../img/cds/lateregistr.jpg" alt="lateregistr" class="cd-image-store" />
                             <div class="nom-album">Late Registration</div>
                             <div class="autor">Kanye West</div>
                             <div class="genere">
                                 Pop Rap, Hip Hop
                                 Conscious Hip Hop, Neo-Soul, Jazz Rap, Chipmunk Soul, Pop Rap
                             </div>
-                            <preu class="preu">33,67€</preu>
-                            <div class="divcomprar"><button class="comprar">COMPRAR</button></div>
+                            <span class="preu">33,67€</span>
+                            <div class="divcomprar"><button class="comprar">BUY</button></div>
                             <div class="internaldivelement2">
-                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol">
+                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol" alt="vinyl">
                             </div>
                         </div>
                         <div class="cdelement2">
-                            <img src="../img/cds/Another Green World.jpg" alt="okcomputer" class="cd-image-store" />
+                            <img src="../img/cds/AnotherGreenWorld.jpg" alt="green World" class="cd-image-store" />
                             <div class="nom-album">Another Green World</div>
                             <div class="autor">Eno</div>
                             <div class="genere">
                                 Art Rock, Ambient
                                 Electronic, Ambient, Art Pop, Experimental Rock, Progressive Electronic
                             </div>
-                            <preu class="preu">68,10€</preu>
-                            <div class="divcomprar"><button class="comprar">COMPRAR</button></div>
+                            <span class="preu">68,10€</span>
+                            <div class="divcomprar"><button class="comprar">BUY</button></div>
                             <div class="internaldivelement2">
-                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol">
+                                <img src="../img/altres/vinyl.jpg" class="cdimagesymbol" alt="vinyl">
                             </div>
                         </div>
-                </section>
+                    </div>
+                </div>
             </div>
         </main>
 
         <!--footer-->
-        <div id="footer">
+        <footer>
             <hr>
             <div class="fixed-size">
-                <p>© 2024 TheBangerPlace. All rights reserved.</p>
+                <p>2025 TheBangerPlace. All rights reserved.</p>
             </div>
-        </div>
+        </footer>
     </div>
 </body>
 

@@ -3,10 +3,8 @@ body,
 html {
   min-height: 100%;
   font-family: "Montserrat", sans-serif;
-  zoom: 1.2;
   margin: 0;
   padding: 0;
-  border: 2px solid rgb(167, 133, 50);
 }
 
 .fixed-size {
@@ -135,7 +133,6 @@ header h1 {
   color: white;
   text-align: left;
   outline: none;
-  padding: 4;
   margin: 0;
   max-width: 100%;
 }
@@ -188,7 +185,6 @@ nav li:hover {
 /*MAIN MENU*/
 /*main body (image with text introduction)*/
 #width-container {
-  max-width: auto;
   margin: 0 auto;
 }
 
@@ -206,21 +202,19 @@ nav li:hover {
 #subcontenidor {
   background-color: black;
   border: 2px solid black;
-  margin: 0;
   width: 100%;
-  height: 100%;
   height: auto;
-  object-fit: cover;
-  object-position: center;
-  opacity: 0.5;
-  filter: blur(5px);
+  min-height: 400px;
   background-image: url("../img/altres/aa.png");
   background-size: cover;
   background-position: center;
-  min-height: 400px;
+  opacity: 0.5;
+  filter: blur(5px);
+  margin: 0;
   padding: 0;
   margin-bottom: 80px;
   transition: filter 0.7s ease;
+  position: relative;
 }
 
 #subcontenidor:hover {
@@ -228,13 +222,15 @@ nav li:hover {
 }
 
 #txt {
+  margin-top: 10px;
+  margin-bottom: 10px;
   position: absolute;
   color: white;
   text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 24px;
+  font-size: clamp(14px, 3vw, 28px);
   opacity: 1;
 }
 
@@ -245,7 +241,7 @@ nav li:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 24px;
+  font-size: clamp(14px, 3vw, 28px);
   font-weight: bold;
   opacity: 0;
 }
@@ -308,9 +304,7 @@ nav li:hover {
   max-width: 100%;
   max-height: 100%;
   box-shadow: 2px 2px 4px black;
-  margin: 20px auto;
-  margin-left: 20px auto;
-  object-fit: cover;
+  margin: 20px;
 }
 
 .news-container {
@@ -331,12 +325,12 @@ nav li:hover {
 
 }
 
+/*articles*/
 .lateral-text {
   flex: 1;
 }
 
-/*cds texts*/
-
+/*new cds texts*/
 .new-disks-name {
   margin-top: 10px;
   text-align: center;
@@ -370,7 +364,6 @@ nav li:hover {
   transform: scale(1.02);
 }
 
-
 .new-disks-autor {
   font-style: italic;
   margin-bottom: 4px;
@@ -387,68 +380,8 @@ nav li:hover {
   text-align: center;
 }
 
-
-.nom-album {
-  font-weight: bold;
-  margin-bottom: 6px;
-  font-size: 22px auto;
-  padding-left: 14px;
-  margin-top: 6px;
-  margin-right: 3px;
-}
-
-.autor {
-  font-style: italic;
-  margin-bottom: 4px;
-  font-size: 18px auto;
-  color: darkgray;
-  padding-left: 14px;
-  margin-right: 3px;
-}
-
-.genere {
-  margin-bottom: 8px;
-  font-size: 15px auto;
-  color: gray;
-  padding-left: 14px;
-  margin-bottom: 1px;
-  margin-right: 3px;
-}
-
-.preu {
-  color: darkred;
-  margin-bottom: 12px;
-  font-size: 18px auto;
-  padding-left: 14px;
-  margin-right: 3px;
-}
-
-.divcomprar {
-  padding: 20px;
-  text-align: center;
-  margin-top: auto;
-}
-
-.comprar {
-  width: 100%;
-  border: none;
-  padding: 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  background-color: rgb(167, 133, 50);
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.comprar:hover {
-  background-color: rgb(179, 160, 136);
-  color: white;
-  transition: 250ms;
-  transform: scale(1.02);
-}
-
-/*carousel animation*/
+/*animations*/
+/*anuncements animation*/
 @keyframes spin {
   from {
     translate: 0;
@@ -459,14 +392,34 @@ nav li:hover {
   }
 }
 
-/*cds && vinyls*/
+#intro {
+  position: fixed;
+  inset: 0;
+  background: black;
+  animation: fading 0.4s ease forwards;
+  z-index: 9999;
+}
+
+/*fade out animation*/
+@keyframes fading {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/*cds && vinyls stores*/
 .cd-image-store {
   width: 100%;
 }
 
 .cd-boxes-format {
   display: grid;
-  /* He trovat això: Crea tantes columnes com es puguin.
+  /* He trovat això. Crea tantes columnes com es puguin.
   cada columna ha de tenir un mínim de 250px i es reparteixen
   l'espai restant de forma equitativa (1fr). */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -496,13 +449,69 @@ nav li:hover {
   top: -14px;
 }
 
+/*info cd/vinyl*/
+.nom-album {
+  font-weight: bold;
+  margin-bottom: 6px;
+  padding-left: 14px;
+  margin-top: 6px;
+  margin-right: 3px;
+}
+
+.autor {
+  font-style: italic;
+  margin-bottom: 4px;
+  color: darkgray;
+  padding-left: 14px;
+  margin-right: 3px;
+}
+
+.genere {
+  margin-bottom: 8px;
+  color: gray;
+  padding-left: 14px;
+  margin-bottom: 1px;
+  margin-right: 3px;
+}
+
+.preu {
+  color: darkred;
+  margin-bottom: 12px;
+  padding-left: 14px;
+  margin-right: 3px;
+}
+
+.divcomprar {
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.comprar {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(167, 133, 50);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.comprar:hover {
+  background-color: rgb(179, 160, 136);
+  color: white;
+  transition: 250ms;
+  transform: scale(1.02);
+}
+
 .internaldivelement2 {
   position: relative;
   height: 0;
 }
 
 /*explore*/
-
 .explorebuttons {
   display: inline-block;
   align-items: center;
@@ -526,15 +535,20 @@ nav li:hover {
   transform: scale(1.02);
 }
 
+/*advanced search bar*/
 .advancedsearch {
   flex: 1;
   padding: 26px;
-  padding-right: 700px;
+  width: 700px;
+  min-width: auto;
+  margin-right: 20px;
   background: #333333;
   border: none;
   border-radius: 8px;
   color: white;
   text-align: left;
-  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  display: flex;
   overflow: hidden;
 }

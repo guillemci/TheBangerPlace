@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main Menu</title>
+    <title>discover</title>
     <link rel="stylesheet" href="../style/style.css" />
 </head>
 
 <body>
+    <!--ANIMACIO ENTRADA-->
+    <div id="intro"></div>
     <div id="width-container">
 
         <!--header-->
@@ -32,8 +33,7 @@
                     </div>
 
                     <!--slogan and user options-->
-                    <section>
-
+                    <div>
                         <div id="userlogin">
                             <button>Login</button>
                         </div>
@@ -41,9 +41,9 @@
                         <div id="userregister">
                             <button>register</button>
                         </div>
-
-                    </section>
+                    </div>
                 </div>
+            </div>
         </header>
 
         <!--navigation menu-->
@@ -54,7 +54,7 @@
                         <li><a href="../index.html">Main Menu</a></li>
                         <li><a href="../pages/cataleg_cds.html">Cds</a></li>
                         <li><a href="../pages/cataleg_vinils.html">Vinyl</a></li>
-                        <li><a href="../pages/explorardiscos.html">Discover</a></li>
+                        <li><a>Discover</a></li>
                     </ul>
                 </nav>
             </div>
@@ -65,85 +65,96 @@
                 <br><br>
                 <div class="anuncement-text">
                     <h3 class="h3">Advanced browser</h3>
+                    <div>
+                        <input type="text" placeholder="'Work In Progress'" class="advancedsearch" />
+                    </div>
                 </div>
-
-                <section>
-                    <input type="text" placeholder="'Work In Progress'" class="advancedsearch" />
-                </section>
 
                 <br><br>
                 <div class="anuncement-text">
                     <h3 class="h3">BLOGS</h3>
                 </div>
                 <br>
-                <section>
-                    <div class="border">
-                        <div class="news-container">
-                            <div class="news-subcontainer">
-                                <img src="../img/cds/Geese - Getting Killed.webp" class="image">
-                                <div class="lateral-text">
-                                    <h4>Getting Killed By Gesse: Album of the year:</h4>
-                                    <p>
-                                        after some time of its relase, Geese's second album "Getting Killed" has been
-                                        crowned
-                                        as
-                                        the "Album of the Year" by multiple international music publications. The band
-                                        successfully transitioned from their raw post-punk sound to a more refined, yet
-                                        equally
-                                        energetic, art-rock structure, captivating critics and fans alike. This is a
-                                        monumental
-                                        achievement for the young band, solidifying their place in the modern rock
-                                        landscape.
-                                        The album's success highlights the vibrant, experimental nature of contemporary
-                                        music.
-                                    </p>
+                <div>
+                    <article>
+                        <div class="border">
+                            <div class="news-container">
+                                <div class="news-subcontainer">
+                                    <img src="../img/cds/GeeseGettingKilled.webp" class="image" alt="Getting Killed">
+                                    <div class="lateral-text">
+                                        <h4>Getting Killed By Gesse: Album of the year:</h4>
+                                        <p>
+                                            after some time of its relase, Geese's second album "Getting Killed" has
+                                            been
+                                            crowned
+                                            as
+                                            the "Album of the Year" by multiple international music publications. The
+                                            band
+                                            successfully transitioned from their raw post-punk sound to a more refined,
+                                            yet
+                                            equally
+                                            energetic, art-rock structure, captivating critics and fans alike. This is a
+                                            monumental
+                                            achievement for the young band, solidifying their place in the modern rock
+                                            landscape.
+                                            The album's success highlights the vibrant, experimental nature of
+                                            contemporary
+                                            music.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="explorebuttons">See Ratings</button>
+                                    <button class="explorebuttons">Info</button>
                                 </div>
                             </div>
-                            <div>
-                                <button class="explorebuttons">See Ratings</button>
-                                <button class="explorebuttons">Info</button>
-                            </div>
                         </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="border">
-                        <div class="news-container">
-                            <div class="news-subcontainer">
-                                <img src="../img/cds/amnesiac.jpg" class="image">
-                                <div class="lateral-text">
-                                    <h4>Radiohead most underrated album: Amnesiac</h4>
-                                    <p>
-                                        Since its release, Radiohead’s Amnesiac has often been overshadowed by the
-                                        band’s more famous albums, yet it deserves far more recognition. Emerging just a
-                                        year after Kid A, the album explores experimental electronic textures while
-                                        retaining emotional depth. Songs like “Pyramid Song” and “Knives Out” highlight
-                                        the band’s versatility, blending haunting melodies, intricate rhythms, and sharp
-                                        rock energy. Thom Yorke’s lyrics delve into memory, isolation, and existential
-                                        uncertainty, giving the album a melancholic yet intimate feel. With subtle,
-                                        innovative production and unpredictable songwriting, Amnesiac is a hidden gem in
-                                        Radiohead’s discography that rewards repeated listening.
-                                    </p>
+                    </article>
+                </div>
+                <div>
+                    <article>
+                        <div class="border">
+                            <div class="news-container">
+                                <div class="news-subcontainer">
+                                    <img src="../img/cds/amnesiac.jpg" class="image" alt="amnesaic">
+                                    <div class="lateral-text">
+                                        <h4>Radiohead most underrated album: Amnesiac</h4>
+                                        <p>
+                                            Since its release, Radiohead's Amnesiac has often been overshadowed by the
+                                            band's more famous albums, yet it deserves far more recognition. Emerging
+                                            just a
+                                            year after Kid A, the album explores experimental electronic textures while
+                                            retaining emotional depth. Songs like "Pyramid Song" and "Knives Out"
+                                            highlight
+                                            the band's versatility, blending haunting melodies, intricate rhythms, and
+                                            sharp
+                                            rock energy. Thom Yorke's lyrics delve into memory, isolation, and
+                                            existential
+                                            uncertainty, giving the album a melancholic yet intimate feel. With subtle,
+                                            innovative production and unpredictable songwriting, Amnesiac is a hidden
+                                            gem in
+                                            Radiohead's discography that rewards repeated listening.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="explorebuttons">See Ratings</button>
+                                    <button class="explorebuttons">Info</button>
                                 </div>
                             </div>
-                            <div>
-                                <button class="explorebuttons">See Ratings</button>
-                                <button class="explorebuttons">Info</button>
-                            </div>
                         </div>
-                    </div>
-                </section>
+                    </article>
+                </div>
             </div>
         </main>
 
         <!--footer-->
-        <div id="footer">
+        <footer>
             <hr>
             <div class="fixed-size">
-                <p>© 2024 TheBangerPlace. All rights reserved.</p>
+                <p>2025 TheBangerPlace. All rights reserved.</p>
             </div>
-        </div>
+        </footer>
     </div>
 </body>
-
 </html>
